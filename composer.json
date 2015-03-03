@@ -1,0 +1,27 @@
+{
+    "name": "gravitymedia/badger",
+    "description": "Badge server written in PHP",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Daniel Schröder",
+            "email": "daniel.schroeder@gravitymedia.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "silex/silex": "~1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "GravityMedia\\Badger\\": "src/"
+        }
+    },
+    "scripts": {
+        "run": [
+            "echo Started web server on http://localhost:8080",
+            "php -S localhost:8080 -t web web/index.php"
+        ]
+    }
+}
