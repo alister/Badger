@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/.editorconfig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.travis.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/composer.json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sami.config.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/application.config.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/htdocs/index.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Application.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Badge/Badge.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Badge/BadgeInterface.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Badge/FlatBadge.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Badge/IndexController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Controller/BadgeController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/ErrorController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/IndexController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/var/svg/flat-square.svg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/var/svg/flat.svg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/var/svg/flat.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/var/svg/plastic.svg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/var/xsl/flat-square.xsl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/var/xsl/flat.xsl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/var/xsl/plastic.xsl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/errors/404.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/errors/4xx.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/errors/500.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/errors/5xx.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/errors/default.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/index.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/layout.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/.htaccess" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/index.php" charset="UTF-8" />
   </component>
 </project>

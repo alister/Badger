@@ -1,4 +1,5 @@
 .idea/workspace.xml
+var/font/*
 vendor/
 composer.phar
 coverage.clover
