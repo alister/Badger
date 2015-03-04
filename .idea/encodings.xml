@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://W:/1/composer.json" charset="UTF-8" />
+    <file url="file://W:/1/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/1/config/autoload/oauth2.global.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/base/development/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/base/development/config/autoload/doctrine.local.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/base/development/config/autoload/oauth2.local.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/base/testing/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/demo/development/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/demo/development/config/autoload/doctrine.local.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/demo/development/config/autoload/oauth2.local.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/demo/production/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/demo/production/config/autoload/oauth2.local.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/demo/testing/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/egp/development/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/egp/development/config/autoload/doctrine.local.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/egp/development/config/autoload/oauth2.local.yaml" charset="UTF-8" />
+    <file url="file://W:/1/data/environment/egp/testing/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/2/composer.json" charset="UTF-8" />
+    <file url="file://W:/2/data/environment/demo/development/config/application.config.yaml" charset="UTF-8" />
+    <file url="file://W:/2/data/environment/demo/testing/config/application.config.yaml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.editorconfig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.travis.yml" charset="UTF-8" />
@@ -11,26 +31,43 @@
     <file url="file://$PROJECT_DIR$/src/Application.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Badge/Badge.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Badge/BadgeInterface.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Badge/FlatBadge.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Badge/IndexController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/Badge/CustomBadgeController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/Badge/IndexControllerFactory.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Controller/BadgeController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/BadgeControllerFactory.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Controller/ErrorController.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Controller/IndexController.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/var/svg/flat-square.svg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/var/svg/flat.svg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/var/svg/flat.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/var/svg/plastic.svg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/ErrorControllerFactory.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/HelpController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/HelpControllerFactory.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/PageController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Controller/PageControllerFactory.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/var/xsl/flat-square.xsl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/var/xsl/flat.xsl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/var/xsl/plastic.xsl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/badge.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/errors/404.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/errors/4xx.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/errors/500.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/errors/5xx.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/errors/default.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/help.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/includes/navbar.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/index.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/layout.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/.htaccess" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/index.php" charset="UTF-8" />
+    <file url="file://W:/3/README.md" charset="UTF-8" />
+    <file url="file://W:/3/bin/evolver-oauth2" charset="UTF-8" />
+    <file url="file://W:/3/bin/evolver-oauth2.php" charset="UTF-8" />
+    <file url="file://W:/3/composer.json" charset="UTF-8" />
+    <file url="file://W:/3/config/autoload/oauth2.global.yaml" charset="UTF-8" />
+    <file url="file://W:/3/config/autoload/oauth2.local.yaml" charset="UTF-8" />
+    <file url="file://W:/3/package/src/Console/Command/CreateClientCommand.php" charset="UTF-8" />
+    <file url="file://W:/3/package/src/Console/Command/CreateScopeCommand.php" charset="UTF-8" />
+    <file url="file://W:/3/package/src/Console/Command/CreateUserCommand.php" charset="UTF-8" />
+    <file url="file://W:/3/package/tests/src/Unit/Console/Command/CreateClientCommandTest.php" charset="UTF-8" />
+    <file url="file://W:/3/package/tests/src/Unit/Console/Command/CreateScopeCommandTest.php" charset="UTF-8" />
+    <file url="file://W:/3/package/tests/src/Unit/Console/Command/CreateUserCommandTest.php" charset="UTF-8" />
   </component>
 </project>
