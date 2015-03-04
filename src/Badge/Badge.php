@@ -22,7 +22,7 @@ class Badge implements BadgeInterface
     /**
      * Default status color
      */
-    const DEFAULT_STATUS_COLOR = '#4c1';
+    const DEFAULT_STATUS_COLOR = '#9f9f9f';
 
     /**
      * Available colors
@@ -30,15 +30,33 @@ class Badge implements BadgeInterface
      * @var array
      */
     public static $colors = [
-        'brightgreen' => '#4c1',
-        'green' => '#97ca00',
-        'yellow' => '#dfb317',
-        'yellowgreen' => '#a4a61d',
-        'orange' => '#fe7d37',
-        'red' => '#e05d44',
-        'blue' => '#007ec6',
+        // red colors
+        'dark-red' => '#b21f35',
+        'red' => '#d82735',
+        // orange colors
+        'dark-orange' => '#ff7435',
+        'orange' => '#ffa135',
+        // yellow colors
+        'gold' => '#ffcb35',
+        'yellow' => '#ffe63b',
+        // green colors
+        'dark-green' => '#00753a',
+        'green' => '#009e47',
+        'yellow-green' => '#9af000',
+        'lime-green' => '#16dd36',
+        // blue colors
+        'dark-blue' => '#0052a5',
+        'royal-blue' => '#0079e7',
+        'sky-blue' => '#06a9fc',
+        // violet colors
+        'indigo' => '#681e7e',
+        'dark-violet' => '#7d3cb5',
+        'violet' => '#b610bf',
+        'dark-pink' => '#e400e0',
+        'pink' => '#ec47e9',
+        // grey colors
         'grey' => '#555',
-        'lightgrey' => '#9f9f9f',
+        'light-grey' => '#9f9f9f',
     ];
 
     /**
