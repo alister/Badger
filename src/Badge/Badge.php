@@ -3,7 +3,7 @@
 namespace GravityMedia\Badger\Badge;
 
 /**
- * Abstract Badge
+ * Badge
  *
  * @package GravityMedia\Badger\Badge
  */
