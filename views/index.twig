@@ -1,13 +1,59 @@
 {% extends "layout.twig" %}
 
 {% block content %}
+    {% include 'includes/navbar.twig' %}
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Badger is a badge server written in PHP</h1>
+
+            <p>This project was inspired by <a href="http://shields.io/" target="_blank">Shields.io</a>.</p>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="jumbotron">
-            <h1>Welcome to your new Silex Application!</h1>
+        <h2>Badges</h2>
 
-            <p>...</p>
+        <p>We currently provide badges for the following services.</p>
+        <ul>
+            <li><a href="#">Packagist</a></li>
+            <li><a href="#">Scrutinizer CI</a></li>
+            <li><a href="#">Travis CI</a></li>
+            <li><a href="#">VersionEye</a></li>
+        </ul>
+    </div>
 
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <div class="container">
+        <h2>Custom Badges</h2>
+
+        <p>You can simply define your own badge <a href="badge">here</a>.</p>
+    </div>
+
+    <div class="container">
+        <h2>Badge Styles</h2>
+
+        <p>The following styles are available.</p>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2"><img src="/badge/style-flat-default.svg?style=flat" alt="flat badge"></div>
+                    <div class="col-md-10"><code class="prettyprint">&lt;img
+                            src="/badge/style-flat-default.svg?style=flat" alt="flat badge"&gt;</code></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><img src="/badge/style-flat%20square-default.svg?style=flat-square"
+                                               alt="flat square badge"></div>
+                    <div class="col-md-10"><code class="prettyprint">&lt;img
+                            src="/badge/style-flat%20square-default.svg?style=flat-square" alt="flat square badge"&gt;</code>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><img src="/badge/style-plastic-default.svg?style=plastic" alt="flat badge"></div>
+                    <div class="col-md-10"><code class="prettyprint">&lt;img
+                            src="/badge/style-plastic-default.svg?style=plastic" alt="plastic badge"&gt;</code></div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

@@ -1,0 +1,41 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+    {% include 'includes/navbar.twig' %}
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Custom badge</h1>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2"><img id="custom-badge" src="/badge/subject-status-color.svg" alt="badge"></div>
+                    <div class="col-md-10"><code id="custom-badge-code" class="prettyprint">&lt;img
+                            src="/badge/subject-status-color.svg" alt="badge"&gt;</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form id="custom-badge-form">
+            <div class="form-group">
+                <label class="control-label" for="subject">Subject</label>
+                <input name="subject" type="text" placeholder="Subject" id="subject" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="status">Status</label>
+                <input name="status" type="text" placeholder="Status" id="status" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="color">Color</label>
+                <select name="color" id="color" class="form-control">
+                    {% for value, color in colors %}
+                        <option value="{{ value }}">{{ color }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </form>
+    </div>
+{% endblock %}
