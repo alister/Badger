@@ -68,14 +68,14 @@ class ErrorController
     }
 
     /**
-     * Error handler
+     * Error action
      *
      * @param \Exception $exception
      * @param int        $code
      *
      * @return \Symfony\Component\HttpFoundation\Response|void
      */
-    function onError(\Exception $exception, $code)
+    function errorAction(\Exception $exception, $code)
     {
         if ($this->isDebug()) {
             return;

@@ -3,7 +3,6 @@
 namespace GravityMedia\Badger\Controller;
 
 use GravityMedia\Badger\Badge\Badge;
-use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -20,9 +19,9 @@ class BadgeController
     const DEFAULT_STYLE = 'flat';
 
     /**
-     * @var Application
+     * @var string
      */
-    protected $application;
+    protected $charset;
 
     /**
      * @var Request
@@ -40,23 +39,26 @@ class BadgeController
     protected $fontFilename;
 
     /**
-     * Create controller
+     * Get charset
      *
-     * @param Application $application
+     * @return string
      */
-    public function __construct(Application $application)
+    public function getCharset()
     {
-        $this->application = $application;
+        return $this->charset;
     }
 
     /**
-     * Get application
+     * Set charset
      *
-     * @return Application
+     * @param string $charset
+     *
+     * @return $this
      */
-    public function getApplication()
+    public function setCharset($charset)
     {
-        return $this->application;
+        $this->charset = $charset;
+        return $this;
     }
 
     /**
@@ -129,27 +131,42 @@ class BadgeController
     }
 
     /**
+     * Escapes a text for HTML.
+     *
+     * @param string $text         The input text to be escaped
+     * @param int    $flags        The flags (@see htmlspecialchars)
+     * @param string $charset      The charset
+     * @param bool   $doubleEncode Whether to try to avoid double escaping or not
+     *
+     * @return string Escaped text
+     */
+    public function escape($text, $flags = ENT_COMPAT, $charset = null, $doubleEncode = true)
+    {
+        return htmlspecialchars($text, $flags, $charset ?: $this->getCharset(), $doubleEncode);
+    }
+
+    /**
      * Badge action
      *
      * @param string $subject
      * @param string $status
      * @param string $color
      *
-     * @return string
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     function badgeAction($subject, $status, $color)
     {
-        $application = $this->getApplication();
-        $color = $application->escape($color);
-
-        $request = $this->getRequest();
-        $style = $request->get('style', self::DEFAULT_STYLE);
-
         $badge = new Badge();
+
+        $style = $this->getRequest()->get('style', self::DEFAULT_STYLE);
         $badge->setXslFilename($this->getXslPath() . DIRECTORY_SEPARATOR . $style . '.xsl');
+
         $badge->setFontFilename($this->getFontFilename());
-        $badge->setSubjectText($application->escape($subject));
-        $badge->setStatusText($application->escape($status));
+
+        $badge->setSubjectText($this->escape($subject));
+        $badge->setStatusText($this->escape($status));
+
+        $color = $this->escape($color);
         if (isset(Badge::$colors[$color])) {
             $badge->setStatusColor(Badge::$colors[$color]);
         }
